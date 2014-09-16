@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" immediate="true" name="Light1_ColorControl">
+   <implementation class="org.energy_home.jemma.osgi.dal.functions.fake.FakeColorControlFunction"/>
+   <service>
+      <provide interface="org.osgi.service.dal.Function"/>
+      <provide interface="org.energy_home.dal.functions.ColorControl"/>
+   </service>
+   <property name="dal.function.device.UID" type="String" value="ZigBee:Light1"/>
+   <property name="dal.function.UID" type="String" value="ZigBee:Light1:ColorControl"/> 
+   <property name="dal.function.operation.names" type="String">
+   getCurrentSaturation
+   getRemainingTime
+   getCurrentX
+   getCurrentY
+   getDriftCompensation
+   getCompensationText
+   getColorTemperature
+   getColorMode
+   getNumberOfPrimaries
+   getPrimary1X
+   getPrimary1Y
+   getPrimary1Intensity
+   getPrimary2X
+   getPrimary2Y
+   getPrimary2Intensity
+   getPrimary3X
+   getPrimary3Y
+   getPrimary3Intensity
+   getPrimary4X
+   getPrimary4Y
+   getPrimary4Intensity
+   getPrimary5X
+   getPrimary5Y
+   getPrimary5Intensity
+   getPrimary6X
+   getPrimary1Y
+   getPrimary6Intensity
+   getWhitePointX
+   getWhitePointY
+   getColorPointRX
+   getColorPointRY
+   getColorPointRIntensity
+   getColorPointGX
+   getColorPointGY
+   getColorPointGIntensity
+   getColorPointBX
+   getColorPointBY
+   getColorPointBIntensity
+   getEnhancedCurrentHue
+   getEnhancedColorMode
+   getColorLoopActive
+   getColorLoopDirection
+   getColorLoopTime
+   getColorLoopStartEnhancedHue
+   getColorLoopStoredEnhancedHue
+   getColorCapabilities
+   getColorTempPhysicalMin
+   getColorTempPhysicalMax
+   execMoveToHue
+   execMoveHue
+   execStepHue
+   execMoveToSaturation
+   execMoveSaturation
+   execStepSaturation
+   execMoveToHueAndSaturation
+   execMoveToColor
+   execMoveColor
+   execStepColor
+   execMoveToColorTemperature</property>
+   <property name="dal.function.type" type="String" value="light"/>
+<reference bind="bindEventAdmin" cardinality="1..1" interface="org.osgi.service.event.EventAdmin" name="EventAdmin" policy="dynamic" unbind="unbindEventAdmin"/>
+   
+</scr:component>

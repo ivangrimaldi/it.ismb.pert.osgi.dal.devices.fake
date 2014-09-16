@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" immediate="true" name="Light1_OnOff">
+   <implementation class="org.energy_home.jemma.osgi.dal.functions.fake.FakeOnOffFunction"/>
+   <service>
+      <provide interface="org.osgi.service.dal.Function"/>
+      <provide interface="org.osgi.service.dal.functions.BooleanControl"/>
+      <provide interface="org.osgi.service.dal.functions.BooleanSensor"/>
+   </service>
+   <property name="dal.function.device.UID" type="String" value="ZigBee:Light1"/>
+   <property name="dal.function.UID" type="String" value="ZigBee:Light1:OnOff"/> 
+   <property name="dal.function.operation.names" type="String">
+   reverse
+   setFalse
+   setTrue</property>
+   <property name="dal.function.property.names" type="String">
+   data
+   </property>
+   <property name="dal.function.type" type="String" value="light"/>
+<reference bind="bindEventAdmin" cardinality="1..1" interface="org.osgi.service.event.EventAdmin" name="EventAdmin" policy="dynamic" unbind="unbindEventAdmin"/>   
+</scr:component>

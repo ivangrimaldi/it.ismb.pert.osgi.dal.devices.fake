@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" immediate="true" name="Thermostat1">
+   <implementation class="org.energy_home.jemma.osgi.dal.devices.fake.FakeDevice"/>
+   <service>
+      <provide interface="org.osgi.service.dal.Device"/>
+   </service>
+   <property name="dal.device.driver" type="String" value="ZigBee"/>
+   <property name="dal.device.UID" type="String" value="ZigBee:Thermostat1"/>
+   <property name="dal.device.status" type="Integer" value="2"/>
+</scr:component>
