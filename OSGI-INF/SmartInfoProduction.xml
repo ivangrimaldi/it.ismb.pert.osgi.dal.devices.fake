@@ -5,6 +5,6 @@
       <provide interface="org.osgi.service.dal.Device"/>
    </service>
    <property name="dal.device.driver" type="String" value="ZigBee"/>
-   <property name="dal.device.UID" type="String" value="ZigBee:SmartInfoProduction"/>
+   <property name="dal.device.UID" type="String" value="ZigBee:PV Meter:ah.app.65432195726903800-1"/>
    <property name="dal.device.status" type="Integer" value="2"/>
 </scr:component>

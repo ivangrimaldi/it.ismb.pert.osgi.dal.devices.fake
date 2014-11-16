@@ -6,8 +6,8 @@
       <provide interface="org.osgi.service.dal.functions.BooleanControl"/>
       <provide interface="org.osgi.service.dal.functions.BooleanSensor"/>
    </service>
-   <property name="dal.function.device.UID" type="String" value="ZigBee:SmartPlug1"/>
-   <property name="dal.function.UID" type="String" value="ZigBee:SmartPlug1:OnOff"/> 
+   <property name="dal.function.device.UID" type="String" value="ZigBee:SmartPlug 1:ah.app.3521399293210526015-8"/>
+   <property name="dal.function.UID" type="String" value="ZigBee:SmartPlug 1:ah.app.3521399293210526015-8:OnOff"/> 
    <property name="dal.function.operation.names" type="String">
    reverse
    setFalse

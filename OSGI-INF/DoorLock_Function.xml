@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" immediate="true" name="DoorLockFunction">
+   <implementation class="org.energy_home.jemma.osgi.dal.functions.fake.FakeDoorLockFunction"/>
+   <service>
+      <provide interface="org.osgi.service.dal.Function"/>
+      <provide interface="org.energy_home.dal.functions.DoorLock"/>
+   </service>
+   <property name="dal.function.device.UID" type="String" value="ZigBee:Door Lock:ah.app.12345195726903800-1"/>
+   <property name="dal.function.UID" type="String" value="ZigBee:Door Lock:ah.app.12345195726903800-1:DoorLock"/> 
+   <property name="dal.function.operation.names" type="String">
+   open
+   close</property>
+   <property name="dal.function.property.names" type="String">
+   status
+   </property>
+<reference bind="bindEventAdmin" cardinality="1..1" interface="org.osgi.service.event.EventAdmin" name="EventAdmin" policy="dynamic" unbind="unbindEventAdmin"/>   
+</scr:component>
