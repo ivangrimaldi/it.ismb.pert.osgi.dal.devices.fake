@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" immediate="true" name="FridgeFunction">
+   <implementation class="org.energy_home.jemma.osgi.dal.functions.fake.FakeFridgeFunction"/>
+   <service>
+      <provide interface="org.osgi.service.dal.Function"/>
+      <provide interface="org.energy_home.dal.functions.Fridge"/>
+   </service>
+   <property name="dal.function.device.UID" type="String" value="ZigBee:Fridge:ah.app.32145195726903800-1"/>
+   <property name="dal.function.UID" type="String" value="ZigBee:Fridge:ah.app.32145195726903800-1:Fridge"/> 
+   <property name="dal.function.operation.names" type="String"></property>
+   <property name="dal.function.property.names" type="String">
+   FridgeTemperature
+   FreezerTemperature
+   IceParty
+   EcoMode
+   SuperCoolMode
+   SuperFreezeMode
+   HolidayMode
+   </property>
+<reference bind="bindEventAdmin" cardinality="1..1" interface="org.osgi.service.event.EventAdmin" name="EventAdmin" policy="dynamic" unbind="unbindEventAdmin"/>   
+</scr:component>
