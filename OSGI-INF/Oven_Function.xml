@@ -7,7 +7,6 @@
    </service>
    <property name="dal.function.device.UID" type="String" value="ZigBee:Oven:ah.app.99945195726903800-1"/>
    <property name="dal.function.UID" type="String" value="ZigBee:Oven:ah.app.99945195726903800-1:Oven"/> 
-   <property name="dal.function.operation.names" type="String"></property>
    <property name="dal.function.property.names" type="String">
    cycle
    temperature

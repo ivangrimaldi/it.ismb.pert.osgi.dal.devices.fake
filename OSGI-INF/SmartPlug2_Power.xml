@@ -7,7 +7,6 @@
    </service>
    <property name="dal.function.device.UID" type="String" value="ZigBee:Smart Plug 2:ah.app.65432195726654321-1"/>
    <property name="dal.function.UID" type="String" value="ZigBee:Smart Plug 2:ah.app.65432195726654321-1:EnergyMeter"/> 
-   <property name="dal.function.operation.names" type="String"></property>
    <property name="dal.function.property.names" type="String">
    current
    total</property>
