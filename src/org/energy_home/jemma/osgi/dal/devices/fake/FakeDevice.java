@@ -30,12 +30,10 @@ public class FakeDevice implements Device{
 		this.serviceProperties=serviceProperties;
 	}
 	
-	@Override
 	public Object getServiceProperty(String propName) {
 		return serviceProperties.get(propName);
 	}
 
-	@Override
 	public void remove() throws DeviceException, UnsupportedOperationException,
 			SecurityException, IllegalStateException {
 		// TODO Auto-generated method stub

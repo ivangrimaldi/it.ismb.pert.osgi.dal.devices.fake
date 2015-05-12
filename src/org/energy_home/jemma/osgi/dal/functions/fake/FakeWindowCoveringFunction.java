@@ -44,20 +44,20 @@ public class FakeWindowCoveringFunction extends FakeEventableFunction implements
 		this.serviceProperties=serviceProperties;
 	}
 
-	@Override
+	
 	public PropertyMetadata getPropertyMetadata(String propertyName)
 			throws IllegalArgumentException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	@Override
+	
 	public OperationMetadata getOperationMetadata(String propertyName)
 			throws IllegalArgumentException {
 		return null;
 	}
 
-	@Override
+	
 	public Object getServiceProperty(String propName) {
 		return serviceProperties.get(propName);
 	}
@@ -79,16 +79,15 @@ public class FakeWindowCoveringFunction extends FakeEventableFunction implements
 	}
 	
 
-	@Override
+	
 	public WindowCoveringData getStatus() throws DeviceException {
 		return status;
 	}
-	@Override
+	
 	public void openUp() throws DeviceException {
 		this.updateData((short) 255);
 		
 	}
-	@Override
 	public void closeDown() throws DeviceException {
 		this.updateData((short) 0);
 		

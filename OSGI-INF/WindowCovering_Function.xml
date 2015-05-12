@@ -5,8 +5,8 @@
       <provide interface="org.osgi.service.dal.Function"/>
       <provide interface="org.energy_home.dal.functions.WindowCovering"/>
    </service>
-   <property name="dal.function.device.UID" type="String" value="ZigBee:Window Covering:ah.app.123451900000003800-1"/>
-   <property name="dal.function.UID" type="String" value="ZigBee:Window Covering:ah.app.123451900000003800-1:WindowCovering"/> 
+   <property name="dal.function.device.UID" type="String" value="ZigBee:ah.app.123451900000003800-1"/>
+   <property name="dal.function.UID" type="String" value="ZigBee:ah.app.123451900000003800-1:WindowCovering"/> 
    <property name="dal.function.operation.names" type="String">
    openUp
    closeDown</property>

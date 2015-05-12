@@ -54,20 +54,20 @@ public class FakeFridgeFunction extends FakeEventableFunction implements Fridge{
 
 	
 
-	@Override
+	
 	public PropertyMetadata getPropertyMetadata(String propertyName)
 			throws IllegalArgumentException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	@Override
+	
 	public OperationMetadata getOperationMetadata(String propertyName)
 			throws IllegalArgumentException {
 		return null;
 	}
 
-	@Override
+	
 	public Object getServiceProperty(String propName) {
 		return serviceProperties.get(propName);
 	}
@@ -86,54 +86,54 @@ public class FakeFridgeFunction extends FakeEventableFunction implements Fridge{
 
 		this.eventAdmin.postEvent(evt);
 	}
-	@Override
+	
 	public LevelData getFridgeTemperature() throws DeviceException {
 		return new LevelData(System.currentTimeMillis(), null, Units.DEGREE_CELSIUS, fridgeTemperature);
 	}
-	@Override
+	
 	public LevelData getFreezerTemperature() throws DeviceException {
 		return new LevelData(System.currentTimeMillis(), null, Units.DEGREE_CELSIUS, freezerTemperature);
 	}
-	@Override
+	
 	public BooleanData getSuperCoolMode() throws DeviceException {
 		return new BooleanData(System.currentTimeMillis(), null, superCoolMode);
 	}
-	@Override
+	
 	public void setSuperCoolMode(Boolean data) throws DeviceException {
 		this.superCoolMode=data;
 		
 	}
-	@Override
+	
 	public BooleanData getSuperFreezeMode() throws DeviceException {
 		return new BooleanData(System.currentTimeMillis(), null, superFreezeMode);
 	}
-	@Override
+	
 	public void setSuperFreezeMode(Boolean data) throws DeviceException {
 		this.superFreezeMode=data;
 		
 	}
-	@Override
+	
 	public BooleanData getEcoMode() throws DeviceException {
 		return new BooleanData(System.currentTimeMillis(), null, ecoMode);
 	}
-	@Override
+	
 	public void setEcoMode(Boolean data) throws DeviceException {
 		this.ecoMode=data;
 		
 	}
-	@Override
+	
 	public BooleanData getIceParty() throws DeviceException {
 		return new BooleanData(System.currentTimeMillis(), null, iceParty);
 	}
-	@Override
+	
 	public void setIceParty(Boolean data) throws DeviceException {
 		this.iceParty=data;
 	}
-	@Override
+	
 	public BooleanData getHolidayMode() throws DeviceException {
 		return new BooleanData(System.currentTimeMillis(), null, holidayMode);
 	}
-	@Override
+	
 	public void setHolidayMode(Boolean data) throws DeviceException {
 		this.holidayMode=data;
 	}

@@ -42,20 +42,17 @@ public class FakeDoorLockFunction extends FakeEventableFunction implements DoorL
 		this.serviceProperties=serviceProperties;
 	}
 
-	@Override
 	public PropertyMetadata getPropertyMetadata(String propertyName)
 			throws IllegalArgumentException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	@Override
 	public OperationMetadata getOperationMetadata(String propertyName)
 			throws IllegalArgumentException {
 		return null;
 	}
 
-	@Override
 	public Object getServiceProperty(String propName) {
 		return serviceProperties.get(propName);
 	}
@@ -80,17 +77,16 @@ public class FakeDoorLockFunction extends FakeEventableFunction implements DoorL
 		this.eventAdmin.postEvent(evt);
 	}
 	
-	@Override
 	public void open() throws DeviceException {
 		updateData(DoorLockData.STATUS_OPEN);
 		
 	}
-	@Override
+	
 	public void close() throws DeviceException {
 		updateData(DoorLockData.STATUS_CLOSED);
 		
 	}
-	@Override
+	
 	public DoorLockData getStatus() throws DeviceException {
 		return data;
 	}

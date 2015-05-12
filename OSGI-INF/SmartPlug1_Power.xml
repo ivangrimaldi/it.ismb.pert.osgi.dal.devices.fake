@@ -5,8 +5,8 @@
       <provide interface="org.osgi.service.dal.Function"/>
       <provide interface="org.osgi.service.dal.functions.Meter"/>
    </service>
-   <property name="dal.function.device.UID" type="String" value="ZigBee:SmartPlug 1:ah.app.3521399293210526015-8"/>
-   <property name="dal.function.UID" type="String" value="ZigBee:SmartPlug 1:ah.app.3521399293210526015-8:EnergyMeter"/> 
+   <property name="dal.function.device.UID" type="String" value="ZigBee:ah.app.3521399293210526015-8"/>
+   <property name="dal.function.UID" type="String" value="ZigBee:ah.app.3521399293210526015-8:EnergyMeter"/> 
    <property name="dal.function.property.names" type="String">
    current
    total</property>

@@ -5,8 +5,8 @@
       <provide interface="org.osgi.service.dal.Function"/>
       <provide interface="org.osgi.service.dal.functions.MultiLevelControl"/>
    </service>
-   <property name="dal.function.device.UID" type="String" value="ZigBee:ColorLight 1:ah.app.36276195726903800-1"/>
-   <property name="dal.function.UID" type="String" value="ZigBee:ColorLight 1:ah.app.36276195726903800-1:LevelControl"/> 
+   <property name="dal.function.device.UID" type="String" value="ZigBee:ah.app.36276195726903800-1"/>
+   <property name="dal.function.UID" type="String" value="ZigBee:ah.app.36276195726903800-1:LevelControl"/> 
    <property name="dal.function.property.names" type="String">
    data
    </property>
