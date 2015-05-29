@@ -38,20 +38,19 @@ public class FakeMultiLevelSensorThermostatFunction extends FakeEventableFunctio
 		this.serviceProperties=serviceProperties;
 	}
 	
-	@Override
 	public PropertyMetadata getPropertyMetadata(String propertyName)
 			throws IllegalArgumentException {
 		return null;
 	}
 
-	@Override
+	
 	public OperationMetadata getOperationMetadata(String propertyName)
 			throws IllegalArgumentException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	@Override
+	
 	public Object getServiceProperty(String propName) {
 		return serviceProperties.get(propName);
 	}
@@ -61,7 +60,7 @@ public class FakeMultiLevelSensorThermostatFunction extends FakeEventableFunctio
 		this.data=new LevelData(new Date().getTime(),null,Units.KELVIN,total);
 	}
 
-	@Override
+	
 	public LevelData getData() throws UnsupportedOperationException,
 			IllegalStateException, DeviceException {
 		// TODO Auto-generated method stub

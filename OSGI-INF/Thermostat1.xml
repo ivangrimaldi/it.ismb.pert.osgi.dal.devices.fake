@@ -5,6 +5,7 @@
       <provide interface="org.osgi.service.dal.Device"/>
    </service>
    <property name="dal.device.driver" type="String" value="ZigBee"/>
-   <property name="dal.device.UID" type="String" value="ZigBee:Thermostat 1:ah.app.12345678726654321-1"/>
+   <property name="dal.device.UID" type="String" value="ZigBee:ah.app.12345678726654321-1"/>
+   <property name="dal.device.name" type="String" value="Thermostat 1"/>
    <property name="dal.device.status" type="Integer" value="2"/>
 </scr:component>

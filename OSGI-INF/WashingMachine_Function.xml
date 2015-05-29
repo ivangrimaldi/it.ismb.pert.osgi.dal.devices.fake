@@ -5,8 +5,8 @@
       <provide interface="org.osgi.service.dal.Function"/>
       <provide interface="org.energy_home.dal.functions.WashingMachine"/>
    </service>
-   <property name="dal.function.device.UID" type="String" value="ZigBee:Washing Machine:ah.app.87645195726903800-1"/>
-   <property name="dal.function.UID" type="String" value="ZigBee:Washing Machine:ah.app.87645195726903800-1:WashingMachine"/>
+   <property name="dal.function.device.UID" type="String" value="ZigBee:ah.app.87645195726903800-1"/>
+   <property name="dal.function.UID" type="String" value="ZigBee:ah.app.87645195726903800-1:WashingMachine"/>
    <property name="dal.function.operation.names" type="String">
    execStartCycle
    execStopCycle

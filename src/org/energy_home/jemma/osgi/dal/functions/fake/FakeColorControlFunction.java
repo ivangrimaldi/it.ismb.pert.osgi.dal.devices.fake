@@ -45,13 +45,13 @@ public class FakeColorControlFunction extends FakeEventableFunction implements C
 	public Object getServiceProperty(String propName) {
 		return serviceProperties.get(propName);
 	}
-	@Override
+	
 	public void setHS(Short hue, Short saturation) throws DeviceException {
 		this.HS[0]=hue;
 		this.HS[1]=saturation;
 		
 	}
-	@Override
+	
 	public Short[] getHS() throws DeviceException {
 		return HS;
 	}

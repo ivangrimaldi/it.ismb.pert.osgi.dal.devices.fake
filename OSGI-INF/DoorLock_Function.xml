@@ -5,8 +5,8 @@
       <provide interface="org.osgi.service.dal.Function"/>
       <provide interface="org.energy_home.dal.functions.DoorLock"/>
    </service>
-   <property name="dal.function.device.UID" type="String" value="ZigBee:Door Lock:ah.app.12345195726903800-1"/>
-   <property name="dal.function.UID" type="String" value="ZigBee:Door Lock:ah.app.12345195726903800-1:DoorLock"/> 
+   <property name="dal.function.device.UID" type="String" value="ZigBee:ah.app.12345195726903800-1"/>
+   <property name="dal.function.UID" type="String" value="ZigBee:ah.app.12345195726903800-1:DoorLock"/> 
    <property name="dal.function.operation.names" type="String">
    open
    close</property>

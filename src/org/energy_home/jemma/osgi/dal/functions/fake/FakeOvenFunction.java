@@ -14,6 +14,7 @@ import org.osgi.service.dal.DeviceException;
 import org.osgi.service.dal.OperationMetadata;
 import org.osgi.service.dal.PropertyMetadata;
 import org.osgi.service.dal.Units;
+import org.osgi.service.dal.functions.data.BooleanData;
 import org.osgi.service.dal.functions.data.LevelData;
 
 public class FakeOvenFunction extends FakeEventableFunction implements Oven{
@@ -60,91 +61,95 @@ public class FakeOvenFunction extends FakeEventableFunction implements Oven{
 	}
 	
 
-	@Override
+	
 	public PropertyMetadata getPropertyMetadata(String propertyName)
 			throws IllegalArgumentException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	@Override
+	
 	public OperationMetadata getOperationMetadata(String propertyName)
 			throws IllegalArgumentException {
 		return null;
 	}
 
-	@Override
+	
 	public Object getServiceProperty(String propName) {
 		return serviceProperties.get(propName);
 	}
 
 
-	@Override
+	
 	public LevelData getCycle() throws DeviceException {
 		return new LevelData(System.currentTimeMillis(),null,"CYCLE",new BigDecimal(cycle));
 	}
-	@Override
+	
 	public void setCycle(Short cycle) throws DeviceException {
 		this.cycle=cycle;
 		
 	}
-	@Override
+	
 	public LevelData getTemperature() throws DeviceException {
 		return new LevelData(System.currentTimeMillis(),null,Units.DEGREE_CELSIUS,temperature);
 	}
-	@Override
+	
 	public void setTemperature(Integer temperature) throws DeviceException {
 		this.temperature=new BigDecimal(temperature);
 		
 	}
 	
-	@Override
+	
 	public TimeData getStartTime() throws DeviceException {
 		return new TimeData(System.currentTimeMillis(), null, startTime);
 	}
-	@Override
+	
 	public void setStartTime(TimeData data) throws DeviceException {
 		this.startTime=data.getTimeAttribute();
 		
 	}
-	@Override
+	
 	public TimeData getFinishTime() throws DeviceException {
 		return new TimeData(System.currentTimeMillis(), null, finishTime);
 	}
 	
-	@Override
+	
 	public void execStartCycle() throws DeviceException {
 		// TODO Auto-generated method stub
 		
 	}
-	@Override
+	
 	public void execStopCycle() throws DeviceException {
 		// TODO Auto-generated method stub
 		
 	}
-	@Override
+	
 	public void execPauseCycle() throws DeviceException {
 		// TODO Auto-generated method stub
 		
 	}
-	@Override
+	
 	public void execOverloadPauseResume() throws DeviceException {
 		// TODO Auto-generated method stub
 		
 	}
-	@Override
+	
 	public void execOverloadPause() throws DeviceException {
 		// TODO Auto-generated method stub
 		
 	}
-	@Override
+	
 	public void execOverloadWarning() throws DeviceException {
 		// TODO Auto-generated method stub
 		
 	}
-	@Override
+	
 	public TimeData getRemainingTime() throws DeviceException {
 		return new TimeData(System.currentTimeMillis(), null, remainingtime);
+	}
+	public BooleanData getRemoteControl() throws DeviceException {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 }

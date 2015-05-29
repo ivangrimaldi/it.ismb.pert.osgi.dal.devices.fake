@@ -40,37 +40,37 @@ public class FakePowerMeterFunction extends FakeEventableFunction implements Met
 		this.serviceProperties=serviceProperties;
 	}
 	
-	@Override
+	
 	public PropertyMetadata getPropertyMetadata(String propertyName)
 			throws IllegalArgumentException {
 		return null;
 	}
 
-	@Override
+	
 	public OperationMetadata getOperationMetadata(String propertyName)
 			throws IllegalArgumentException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	@Override
+	
 	public Object getServiceProperty(String propName) {
 		return serviceProperties.get(propName);
 	}
 
-	@Override
+	
 	public LevelData getCurrent() throws UnsupportedOperationException,
 			IllegalStateException, DeviceException {
 		return current;
 	}
 
-	@Override
+	
 	public LevelData getTotal() throws UnsupportedOperationException,
 			IllegalStateException, DeviceException {
 		return total;
 	}
 
-	@Override
+	
 	public void resetTotal() throws UnsupportedOperationException,
 			IllegalStateException, DeviceException {
 		updateTotal(new BigDecimal(0));

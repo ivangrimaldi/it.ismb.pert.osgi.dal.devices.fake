@@ -5,8 +5,8 @@
       <provide interface="org.osgi.service.dal.Function"/>
       <provide interface="org.energy_home.dal.functions.ColorControl"/>
    </service>
-   <property name="dal.function.device.UID" type="String" value="ZigBee:ColorLight 1:ah.app.36276195726903800-1"/>
-   <property name="dal.function.UID" type="String" value="ZigBee:ColorLight 1:ah.app.36276195726903800-1:ColorControl"/> 
+   <property name="dal.function.device.UID" type="String" value="ZigBee:ah.app.36276195726903800-1"/>
+   <property name="dal.function.UID" type="String" value="ZigBee:ah.app.36276195726903800-1:ColorControl"/> 
    <property name="dal.function.property.names" type="String">HS</property>
    <property name="dal.function.type" type="String" value="light"/>
 <reference bind="bindEventAdmin" cardinality="1..1" interface="org.osgi.service.event.EventAdmin" name="EventAdmin" policy="dynamic" unbind="unbindEventAdmin"/>

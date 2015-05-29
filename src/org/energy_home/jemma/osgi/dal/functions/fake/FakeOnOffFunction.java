@@ -46,45 +46,45 @@ public class FakeOnOffFunction extends FakeEventableFunction implements BooleanC
 		return data;
 	}
 
-	@Override
+	
 	public void setData(boolean data) throws UnsupportedOperationException,
 			IllegalStateException, DeviceException, IllegalArgumentException {
 		updateData(data);
 		
 	}
 
-	@Override
+	
 	public void reverse() throws UnsupportedOperationException,
 			IllegalStateException, DeviceException {
 		updateData(!this.data.getValue());
 	}
 
-	@Override
+	
 	public void setTrue() throws UnsupportedOperationException,
 			IllegalStateException, DeviceException {
 		updateData(true);
 	}
 
-	@Override
+	
 	public void setFalse() throws UnsupportedOperationException,
 			IllegalStateException, DeviceException {
 		updateData(false);
 	}
 
-	@Override
+	
 	public PropertyMetadata getPropertyMetadata(String propertyName)
 			throws IllegalArgumentException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	@Override
+	
 	public OperationMetadata getOperationMetadata(String propertyName)
 			throws IllegalArgumentException {
 		return null;
 	}
 
-	@Override
+	
 	public Object getServiceProperty(String propName) {
 		return serviceProperties.get(propName);
 	}

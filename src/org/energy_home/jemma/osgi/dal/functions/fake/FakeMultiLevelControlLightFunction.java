@@ -39,20 +39,20 @@ public class FakeMultiLevelControlLightFunction extends FakeEventableFunction im
 		this.serviceProperties=serviceProperties;
 	}
 	
-	@Override
+	
 	public PropertyMetadata getPropertyMetadata(String propertyName)
 			throws IllegalArgumentException {
 		return null;
 	}
 
-	@Override
+	
 	public OperationMetadata getOperationMetadata(String propertyName)
 			throws IllegalArgumentException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	@Override
+	
 	public Object getServiceProperty(String propName) {
 		return serviceProperties.get(propName);
 	}
@@ -62,21 +62,21 @@ public class FakeMultiLevelControlLightFunction extends FakeEventableFunction im
 		this.data=new LevelData(new Date().getTime(),null,Units.LUX,total);
 	}
 
-	@Override
+	
 	public LevelData getData() throws UnsupportedOperationException,
 			IllegalStateException, DeviceException {
 		// TODO Auto-generated method stub
 		return this.data;
 	}
 
-	@Override
+	
 	public void setData(BigDecimal level) throws UnsupportedOperationException,
 			IllegalStateException, DeviceException, IllegalArgumentException {
 		updateLevel(level);
 		
 	}
 
-	@Override
+	
 	public void setData(BigDecimal level, String unit)
 			throws UnsupportedOperationException, IllegalStateException,
 			DeviceException, IllegalArgumentException {

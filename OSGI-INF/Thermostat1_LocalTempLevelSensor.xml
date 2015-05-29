@@ -5,8 +5,8 @@
       <provide interface="org.osgi.service.dal.Function"/>
       <provide interface="org.osgi.service.dal.functions.MultiLevelControl"/>
    </service>
-   <property name="dal.function.device.UID" type="String" value="ZigBee:Thermostat 1:ah.app.12345678726654321-1"/>
-   <property name="dal.function.UID" type="String" value="ZigBee:Thermostat 1:ah.app.12345678726654321-1:Temperature"/> 
+   <property name="dal.function.device.UID" type="String" value="ZigBee:ah.app.12345678726654321-1"/>
+   <property name="dal.function.UID" type="String" value="ZigBee:ah.app.12345678726654321-1:Temperature"/> 
    <property name="dal.function.property.names" type="String">
    data
    </property>
