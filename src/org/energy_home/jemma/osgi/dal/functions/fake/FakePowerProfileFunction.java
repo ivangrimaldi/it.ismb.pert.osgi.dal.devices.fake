@@ -28,9 +28,30 @@ public class FakePowerProfileFunction extends FakeEventableFunction implements
 	{
 		this.serviceProperties=context.getProperties();
 		this.context=context;
+		
 		TransferredPhaseAttribute tph_1=new TransferredPhaseAttribute();
 		TransferredPhaseAttribute tph_2=new TransferredPhaseAttribute();
 		TransferredPhaseAttribute tph_3=new TransferredPhaseAttribute();
+		
+		tph_1.Energy=192;
+		tph_1.ExpectedDuration=11;
+		tph_1.MaxActivationDelay=65535;
+		tph_1.EnergyPhaseID=1;
+		tph_1.MacroPhaseID=1;
+		
+		tph_2.Energy=150;
+		tph_2.ExpectedDuration=10;
+		tph_2.MaxActivationDelay=0;
+		tph_2.EnergyPhaseID=2;
+		tph_2.MacroPhaseID=2;
+		
+
+		tph_3.Energy=196;
+		tph_3.ExpectedDuration=59;
+		tph_3.MaxActivationDelay=20;
+		tph_3.EnergyPhaseID=3;
+		tph_3.MacroPhaseID=6;
+				
 		phases.add(tph_1);
 		phases.add(tph_2);
 		phases.add(tph_3);
